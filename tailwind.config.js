@@ -1,0 +1,138 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./*.{html,js}", "./!(build|dist|.*)/**/*.{html,js}"],
+  theme: {
+    extend: {
+      colors: {
+        white: "#fff",
+        whitesmoke: {
+          "100": "#ececec",
+          "200": "rgba(246, 241, 241, 0.19)",
+          "300": "rgba(236, 236, 236, 0.75)",
+        },
+        firebrick: {
+          "100": "#a82d1b",
+          "200": "#c30a0a",
+        },
+        brown: "#952323",
+        black: "#000",
+        palegoldenrod: {
+          "100": "#ffe6a4",
+          "200": "rgba(255, 230, 164, 0.75)",
+          "300": "rgba(255, 230, 164, 0.5)",
+          "400": "rgba(255, 230, 164, 0.6)",
+          "500": "rgba(255, 229, 164, 0)",
+        },
+        burlywood: {
+          "100": "#e6cc8a",
+          "200": "rgba(230, 204, 138, 0.5)",
+        },
+        wheat: "#dad4b5",
+        darkslategray: {
+          "100": "#36454f",
+          "200": "#333",
+        },
+        indianred: "#cf5442",
+        blanchedalmond: "#f2e8c6",
+        gainsboro: {
+          "100": "#d9d9d9",
+          "200": "rgba(219, 217, 217, 0.19)",
+        },
+        mintcream: "#f3f8f4",
+        mediumseagreen: "#2fb554",
+        sienna: "#a65d50",
+        gray: "rgba(255, 255, 255, 0)",
+      },
+      spacing: {},
+      fontFamily: {
+        oswald: "Oswald",
+        montserrat: "Montserrat",
+        nunito: "Nunito",
+      },
+      borderRadius: {
+        xl: "20px",
+        "11xl-5": "30.5px",
+        "81xl": "100px",
+        "3xs": "10px",
+        "10xs": "3px",
+        "31xl": "50px",
+        "41xl": "60px",
+      },
+    },
+    fontSize: {
+      "17xl": "36px",
+      "29xl": "48px",
+      "41xl": "60px",
+      "77xl": "96px",
+      "8xl": "27px",
+      "3xl": "22px",
+      "10xl": "29px",
+      "19xl": "38px",
+      "9xl": "28px",
+      "11xl": "30px",
+      lg: "18px",
+      "5xl": "24px",
+      "6xl": "25px",
+      xl: "20px",
+      "7xl": "26px",
+      "2xl": "21px",
+      base: "16px",
+      lgi: "19px",
+      "21xl": "40px",
+      "13xl": "32px",
+      "26xl": "45px",
+      sm: "14px",
+      inherit: "inherit",
+    },
+    screens: {
+      mq1325: {
+        raw: "screen and (max-width: 1325px)",
+      },
+      mq1300: {
+        raw: "screen and (max-width: 1300px)",
+      },
+      mq1125: {
+        raw: "screen and (max-width: 1125px)",
+      },
+      mq1050: {
+        raw: "screen and (max-width: 1050px)",
+      },
+      mq1025: {
+        raw: "screen and (max-width: 1025px)",
+      },
+      mq1000: {
+        raw: "screen and (max-width: 1000px)",
+      },
+      mq975: {
+        raw: "screen and (max-width: 975px)",
+      },
+      mq950: {
+        raw: "screen and (max-width: 950px)",
+      },
+      mq825: {
+        raw: "screen and (max-width: 825px)",
+      },
+      mq800: {
+        raw: "screen and (max-width: 800px)",
+      },
+      mq750: {
+        raw: "screen and (max-width: 750px)",
+      },
+      mq725: {
+        raw: "screen and (max-width: 725px)",
+      },
+      mq700: {
+        raw: "screen and (max-width: 700px)",
+      },
+      mq675: {
+        raw: "screen and (max-width: 675px)",
+      },
+      mq450: {
+        raw: "screen and (max-width: 450px)",
+      },
+    },
+  },
+  corePlugins: {
+    preflight: false,
+  },
+};
